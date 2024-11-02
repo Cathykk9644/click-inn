@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/api/test", async (req: Request, res: Response) => {
-  res.json({ message: "This is the test route!! Happy Coding" });
+  res.json({ message: "This is the test route!! Happy Coding Forever!!" });
 });
 
 app.listen(PORT, () => {
