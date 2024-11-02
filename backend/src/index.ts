@@ -1,6 +1,10 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
 import "dotenv/config";
+import mongoose from "mongoose";
+
+// Connect with the database
+mongoose.connect(process.env.MONGODB_CONNECTION_STRING as string);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
